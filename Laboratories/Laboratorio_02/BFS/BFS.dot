@@ -1,0 +1,11 @@
+graph BFS {
+A -- B;
+A -- C;
+B -- D;
+B -- E;
+C -- F;
+C -- G;
+E -- H;
+G -- I;
+G -- J;
+}

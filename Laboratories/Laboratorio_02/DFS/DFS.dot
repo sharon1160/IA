@@ -1,0 +1,11 @@
+graph DFS {
+A -- B;
+A -- C;
+B -- D;
+B -- E;
+E -- H;
+C -- F;
+C -- G;
+G -- I;
+G -- J;
+}
