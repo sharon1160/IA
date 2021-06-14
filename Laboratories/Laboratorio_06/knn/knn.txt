@@ -1,0 +1,215 @@
+Alumna: Sharon Chullunquía Rosas
+
+Algoritmo: Knn
+
+Datos de entrenamiento:
+
+mandarin : [192, 8.4, 7.3, 0.55]
+mandarin : [176, 7.4, 7.2, 0.6]
+mandarin : [86, 6.2, 4.7, 0.8]
+mandarin : [84, 6.0, 4.6, 0.79]
+apple : [80, 5.8, 4.3, 0.77]
+apple : [80, 5.9, 4.3, 0.81]
+apple : [76, 5.8, 4.0, 0.81]
+apple : [178, 7.1, 7.8, 0.92]
+apple : [172, 7.4, 7.0, 0.89]
+apple : [166, 6.9, 7.3, 0.93]
+apple : [164, 7.3, 7.7, 0.7]
+apple : [152, 7.6, 7.3, 0.69]
+apple : [156, 7.7, 7.1, 0.69]
+apple : [156, 7.6, 7.5, 0.67]
+apple : [162, 7.5, 7.1, 0.83]
+apple : [162, 7.4, 7.2, 0.85]
+apple : [160, 7.5, 7.5, 0.86]
+apple : [156, 7.4, 7.4, 0.84]
+apple : [140, 7.3, 7.1, 0.87]
+orange : [356, 9.2, 9.2, 0.75]
+orange : [362, 9.6, 9.2, 0.74]
+orange : [204, 7.5, 9.2, 0.77]
+orange : [140, 6.7, 7.1, 0.72]
+orange : [158, 7.1, 7.5, 0.79]
+orange : [210, 7.8, 8.0, 0.82]
+orange : [164, 7.2, 7.0, 0.8]
+orange : [190, 7.5, 8.1, 0.74]
+orange : [142, 7.6, 7.8, 0.75]
+orange : [160, 7.1, 7.6, 0.76]
+orange : [154, 7.3, 7.3, 0.79]
+orange : [158, 7.2, 7.8, 0.77]
+orange : [144, 6.8, 7.4, 0.75]
+orange : [180, 7.6, 8.2, 0.79]
+orange : [154, 7.2, 7.2, 0.82]
+lemon : [200, 7.3, 10.5, 0.72]
+lemon : [186, 7.2, 9.2, 0.72]
+lemon : [216, 7.3, 10.2, 0.71]
+lemon : [174, 7.3, 10.1, 0.72]
+lemon : [132, 5.8, 8.7, 0.73]
+lemon : [130, 6.0, 8.2, 0.71]
+lemon : [116, 6.0, 7.5, 0.72]
+lemon : [120, 6.0, 8.4, 0.74]
+lemon : [116, 6.1, 8.5, 0.71]
+lemon : [116, 6.3, 7.7, 0.72]
+lemon : [116, 5.9, 8.1, 0.73]
+lemon : [152, 6.5, 8.5, 0.72]
+lemon : [118, 6.1, 8.1, 0.7]
+
+Datos de prueba:
+
+orange : [192, 8.4, 7.3, 0.55]
+apple : [176, 7.4, 7.2, 0.6]
+orange : [86, 6.2, 4.7, 0.8]
+apple : [84, 6.0, 4.6, 0.79]
+orange : [80, 5.8, 4.3, 0.77]
+apple : [80, 5.9, 4.3, 0.81]
+apple : [76, 5.8, 4.0, 0.81]
+orange : [178, 7.1, 7.8, 0.92]
+lemon : [172, 7.4, 7.0, 0.89]
+lemon : [166, 6.9, 7.3, 0.93]
+lemon : [164, 7.3, 7.7, 0.7]
+mandarin : [152, 7.6, 7.3, 0.69]
+
+
+Dato de prueba: [150, 7.1, 7.9, 0.75]
+Clase real: orange
+Vecinos más cercanos y sus distancias: 
+[152, 7.6, 7.3, 0.69] -> 2.1479292353334176 de clase apple
+[152, 6.5, 8.5, 0.72] -> 2.1727632176562635 de clase lemon
+[154, 7.3, 7.3, 0.79] -> 4.0498888873646886 de clase orange
+[154, 7.2, 7.2, 0.82] -> 4.062622305851234 de clase orange
+[144, 6.8, 7.4, 0.75] -> 6.028266749240614 de clase orange
+[156, 7.4, 7.4, 0.84] -> 6.0289385467095284 de clase apple
+[156, 7.6, 7.5, 0.67] -> 6.03460023530971 de clase apple
+Clase estimada: orange
+
+Dato de prueba: [168, 7.5, 7.6, 0.73]
+Clase real: apple
+Vecinos más cercanos y sus distancias: 
+[166, 6.9, 7.3, 0.93] -> 2.118962010041709 de clase apple
+[164, 7.3, 7.7, 0.7] -> 4.006357447857093 de clase apple
+[172, 7.4, 7.0, 0.89] -> 4.049148058542686 de clase apple
+[164, 7.2, 7.0, 0.8] -> 4.056463977406923 de clase orange
+[162, 7.4, 7.2, 0.85] -> 6.0153470390327435 de clase apple
+[162, 7.5, 7.1, 0.83] -> 6.021627686929839 de clase apple
+[174, 7.3, 10.1, 0.72] -> 6.503083883820045 de clase lemon
+Clase estimada: apple
+
+Dato de prueba: [342, 9.0, 9.4, 0.75]
+Clase real: orange
+Vecinos más cercanos y sus distancias: 
+[356, 9.2, 9.2, 0.75] -> 14.002856851371437 de clase orange
+[362, 9.6, 9.2, 0.74] -> 20.01 de clase orange
+[216, 7.3, 10.2, 0.71] -> 126.01401350643506 de clase lemon
+[210, 7.8, 8.0, 0.82] -> 132.0128967184646 de clase orange
+[204, 7.5, 9.2, 0.77] -> 138.00829830122535 de clase orange
+[200, 7.3, 10.5, 0.72] -> 142.0144390546257 de clase lemon
+[192, 8.4, 7.3, 0.55] -> 150.01603247653233 de clase mandarin
+Clase estimada: orange
+
+Dato de prueba: [154, 7.0, 7.1, 0.88]
+Clase real: apple
+Vecinos más cercanos y sus distancias: 
+[154, 7.2, 7.2, 0.82] -> 0.23151673805580492 de clase orange
+[154, 7.3, 7.3, 0.79] -> 0.37161808352124087 de clase orange
+[156, 7.4, 7.4, 0.84] -> 2.0619408332927502 de clase apple
+[152, 7.6, 7.3, 0.69] -> 2.106205118216172 de clase apple
+[156, 7.7, 7.1, 0.69] -> 2.127463278178968 de clase apple
+[156, 7.6, 7.5, 0.67] -> 2.136375435170513 de clase apple
+[152, 6.5, 8.5, 0.72] -> 2.497118339206214 de clase lemon
+Clase estimada: orange
+
+Dato de prueba: [160, 7.0, 7.4, 0.81]
+Clase real: orange
+Vecinos más cercanos y sus distancias: 
+[160, 7.1, 7.6, 0.76] -> 0.22912878474779122 de clase orange
+[160, 7.5, 7.5, 0.86] -> 0.5123475382979799 de clase apple
+[158, 7.1, 7.5, 0.79] -> 2.00509351402871 de clase orange
+[162, 7.4, 7.2, 0.85] -> 2.049780476051033 de clase apple
+[158, 7.2, 7.8, 0.77] -> 2.049780476051033 de clase orange
+[162, 7.5, 7.1, 0.83] -> 2.083362666460163 de clase apple
+[156, 7.4, 7.4, 0.84] -> 4.0200621885737045 de clase apple
+Clase estimada: orange
+
+Dato de prueba: [170, 7.6, 7.9, 0.88]
+Clase real: apple
+Vecinos más cercanos y sus distancias: 
+[172, 7.4, 7.0, 0.89] -> 2.2022942582679548 de clase apple
+[166, 6.9, 7.3, 0.93] -> 4.105179655021202 de clase apple
+[174, 7.3, 10.1, 0.72] -> 4.577728694450993 de clase lemon
+[164, 7.3, 7.7, 0.7] -> 6.013518105069611 de clase apple
+[176, 7.4, 7.2, 0.6] -> 6.050487583658032 de clase mandarin
+[164, 7.2, 7.0, 0.8] -> 6.080822312812635 de clase orange
+[178, 7.1, 7.8, 0.92] -> 8.01633332640304 de clase apple
+Clase estimada: apple
+
+Dato de prueba: [172, 7.1, 7.6, 0.92]
+Clase real: apple
+Vecinos más cercanos y sus distancias: 
+[172, 7.4, 7.0, 0.89] -> 0.6714908785679817 de clase apple
+[174, 7.3, 10.1, 0.72] -> 3.214031735997639 de clase lemon
+[176, 7.4, 7.2, 0.6] -> 4.043810084561341 de clase mandarin
+[178, 7.1, 7.8, 0.92] -> 6.003332407921453 de clase apple
+[166, 6.9, 7.3, 0.93] -> 6.010831889181397 de clase apple
+[164, 7.3, 7.7, 0.7] -> 8.00614763790926 de clase apple
+[164, 7.2, 7.0, 0.8] -> 8.023989032893802 de clase orange
+Clase estimada: apple
+
+Dato de prueba: [154, 7.1, 7.5, 0.78]
+Clase real: orange
+Vecinos más cercanos y sus distancias: 
+[154, 7.3, 7.3, 0.79] -> 0.2830194339616984 de clase orange
+[154, 7.2, 7.2, 0.82] -> 0.31874754901018454 de clase orange
+[156, 7.4, 7.4, 0.84] -> 2.0257344347174433 de clase apple
+[156, 7.6, 7.5, 0.67] -> 2.0644854080375574 de clase apple
+[152, 7.6, 7.3, 0.69] -> 2.0731859540330673 de clase apple
+[156, 7.7, 7.1, 0.69] -> 2.1279332696304176 de clase apple
+[152, 6.5, 8.5, 0.72] -> 2.3159447316376096 de clase lemon
+Clase estimada: orange
+
+Dato de prueba: [196, 7.3, 9.7, 0.72]
+Clase real: lemon
+Vecinos más cercanos y sus distancias: 
+[200, 7.3, 10.5, 0.72] -> 4.079215610874228 de clase lemon
+[192, 8.4, 7.3, 0.55] -> 4.795716839013746 de clase mandarin
+[190, 7.5, 8.1, 0.74] -> 6.212922017859229 de clase orange
+[204, 7.5, 9.2, 0.77] -> 8.018260409839531 de clase orange
+[186, 7.2, 9.2, 0.72] -> 10.012991560967182 de clase lemon
+[210, 7.8, 8.0, 0.82] -> 14.112051587207297 de clase orange
+[180, 7.6, 8.2, 0.79] -> 16.073111086532066 de clase orange
+Clase estimada: orange
+
+Dato de prueba: [194, 7.2, 10.3, 0.7]
+Clase real: lemon
+Vecinos más cercanos y sus distancias: 
+[192, 8.4, 7.3, 0.55] -> 3.8029593739612846 de clase mandarin
+[190, 7.5, 8.1, 0.74] -> 4.575106556136152 de clase orange
+[200, 7.3, 10.5, 0.72] -> 6.0041985310281 de clase lemon
+[186, 7.2, 9.2, 0.72] -> 8.075295660221984 de clase lemon
+[204, 7.5, 9.2, 0.77] -> 10.065033531985874 de clase orange
+[180, 7.6, 8.2, 0.79] -> 14.16255979687288 de clase orange
+[210, 7.8, 8.0, 0.82] -> 16.17604401576603 de clase orange
+Clase estimada: lemon
+
+Dato de prueba: [118, 5.9, 8.0, 0.72]
+Clase real: lemon
+Vecinos más cercanos y sus distancias: 
+[118, 6.1, 8.1, 0.7] -> 0.22449944320643567 de clase lemon
+[116, 5.9, 8.1, 0.73] -> 2.0025234081028866 de clase lemon
+[120, 6.0, 8.4, 0.74] -> 2.04215572373901 de clase lemon
+[116, 6.3, 7.7, 0.72] -> 2.06155281280883 de clase lemon
+[116, 6.0, 7.5, 0.72] -> 2.0639767440550294 de clase lemon
+[116, 6.1, 8.5, 0.71] -> 2.0712556578076016 de clase lemon
+[130, 6.0, 8.2, 0.71] -> 12.002087318462568 de clase lemon
+Clase estimada: lemon
+
+Dato de prueba: [180, 8.0, 6.8, 0.59]
+Clase real: mandarin
+Vecinos más cercanos y sus distancias: 
+[180, 7.6, 8.2, 0.79] -> 1.4696938456699065 de clase orange
+[178, 7.1, 7.8, 0.92] -> 2.432878953010199 de clase apple
+[176, 7.4, 7.2, 0.6] -> 4.064492588257481 de clase mandarin
+[186, 7.2, 9.2, 0.72] -> 6.5128258075892065 de clase lemon
+[174, 7.3, 10.1, 0.72] -> 6.884540652795944 de clase lemon
+[172, 7.4, 7.0, 0.89] -> 8.030566605165541 de clase apple
+[190, 7.5, 8.1, 0.74] -> 10.097648241050981 de clase orange
+Clase estimada: orange
+
+Tasa de acierto: 0.75 %
